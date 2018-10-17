@@ -1,6 +1,8 @@
 FROM selenium/node-firefox:3.14.0-helium
 LABEL authors=SeleniumHQ
 
+USER root
+
 RUN apt-get update && \
   apt-get install -y \
   python3-pip && \
