@@ -3,7 +3,7 @@ sudo: "required"
 services:
   - "docker"
 before_install:
-  - docker build -t meshfields/standalone-docker .
+  - docker build -t meshfields/standalone-firefox .
 deploy:
   provider: script
   script: bash docker_push.sh
